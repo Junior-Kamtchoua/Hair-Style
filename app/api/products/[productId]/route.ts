@@ -7,10 +7,12 @@ const pool = new Pool({
 
 export async function GET(
   req: Request,
-  { params }: { params: { productId: string } },
+  context: { params: Promise<{ productId: string }> },
 ) {
+  const { productId } = await context.params;
+
   const result = await pool.query(`SELECT * FROM products WHERE id = $1`, [
-    params.productId,
+    productId,
   ]);
 
   return NextResponse.json(result.rows[0]);
