@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: url("/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero__content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero__buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.hero__btn {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__btn--primary {
+  background: #000;
+  color: #fff;
+}
+
+.hero__btn--secondary {
+  background: #fff;
+  color: #000;
+}
+
+/* PRODUCTS */
+.productsPreview {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.productsPreview__grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.productCard {
+  border: 1px solid #eee;
+  padding: 15px;
+}
+
+.productCard__image {
+  height: 200px;
+  background: #ddd;
+  margin-bottom: 10px;
+}
+
+/* BOOKING */
+.bookingCTA {
+  padding: 80px 20px;
+  text-align: center;
+  background: #000;
+  color: #fff;
+}
+
+.bookingCTA__btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #fff;
+  color: #000;
+}
