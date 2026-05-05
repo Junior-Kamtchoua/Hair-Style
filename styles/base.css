@@ -14,3 +14,90 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero__content h1 {
+    font-size: 32px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__center {
+    display: none;
+  }
+
+  .header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stylist {
+    grid-template-columns: 1fr;
+  }
+
+  .stylist__content {
+    padding: 40px 20px;
+  }
+
+  .stylist__content h2 {
+    font-size: 32px;
+  }
+
+  .stylist__image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stylist {
+    grid-template-columns: 1fr;
+  }
+
+  .stylist__content {
+    padding: 40px 20px;
+  }
+
+  .stylist__title {
+    font-size: 32px;
+  }
+
+  .stylist__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .look {
+    grid-template-columns: 1fr;
+  }
+
+  .look__content {
+    padding: 40px 20px;
+  }
+
+  .look__title {
+    font-size: 32px;
+  }
+
+  .look__image {
+    height: 300px;
+  }
+}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 type Product = {
   id: string;
@@ -12,9 +13,11 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link href={`/shop/${product.id}`} className="productCard">
       <div className="productCard__imageWrapper">
-        <img
+        <Image
           src={product.image_url || "/placeholder.jpg"}
           alt={product.name}
+          width={400}
+          height={400}
           className="productCard__image"
         />
 
@@ -25,6 +28,7 @@ export default function ProductCard({ product }: { product: Product }) {
 
       <div className="productCard__info">
         <h3 className="productCard__title">{product.name}</h3>
+
         <p className="productCard__price">${product.price}</p>
       </div>
     </Link>

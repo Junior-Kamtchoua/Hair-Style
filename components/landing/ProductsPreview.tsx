@@ -1,16 +1,17 @@
+"use client";
+
 export default function ProductsPreview() {
   return (
-    <section className="productsPreview">
-      <h2>Shop Our Collection</h2>
+    <section className="logoSection">
+      {/* floating elements */}
+      <div className="float float--one">$</div>
+      <div className="float float--two">$</div>
 
-      <div className="productsPreview__grid">
-        {[1, 2, 3, 4].map((item) => (
-          <div key={item} className="productCard">
-            <div className="productCard__image" />
-            <h3>Raw Indian Curly</h3>
-            <p>$120</p>
-          </div>
-        ))}
+      {/* content */}
+      <div className="logoContent">
+        <img src="/HMHC2.png" alt="HMHC Logo" />
+        <h1>HIGH MAINTENANCE</h1>
+        <p>Luxury Hair. Elevated Confidence.</p>
       </div>
     </section>
   );

@@ -1,0 +1,16 @@
+.ordersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ordersTable th,
+.ordersTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.ordersTable button {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
